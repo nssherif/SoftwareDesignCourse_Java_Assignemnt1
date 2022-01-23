@@ -20,8 +20,8 @@ class DigitalFactory {
 		return new Net( name ) ;
 	}
 
-	public InputDeviceInterface makeNewInput(String name) {
-		Assert.toBeDone() ; return null ;
+	public InputDeviceInterface makeNewInput(String name, Boolean isOutputPort) {
+		return new InputDevice(name, isOutputPort);
 	}
 
 	public DeviceInterface makeNewAndGate(String name) {

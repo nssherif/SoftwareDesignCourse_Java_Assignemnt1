@@ -26,9 +26,9 @@ public class Network {
 	 * @param name a unique name for the device.
 	 * @return the new device
 	 */
-	public InputDeviceInterface makeInput( String name ) {
+	public InputDeviceInterface makeInput( String name, boolean isOutputPort ) {
 		Assert.check( getDeviceByName(name)==null, "Device name is not unique." ) ;
-		InputDeviceInterface device = factory.makeNewInput( name ) ;
+		InputDeviceInterface device = factory.makeNewInput( name, isOutputPort ) ;
 		devices.add( device ) ;
 		return device ; }
 

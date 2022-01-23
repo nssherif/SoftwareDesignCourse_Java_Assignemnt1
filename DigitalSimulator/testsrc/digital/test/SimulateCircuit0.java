@@ -16,9 +16,10 @@ public class SimulateCircuit0 {
 		
 		Network network = new Network() ;
 		
-		InputDeviceInterface inputA = network.makeInput("A") ;
+		InputDeviceInterface inputA = network.makeInput("A", true) ;
 		NetInterface a = network.makeNet("a") ;
 		a.addPort(  inputA.getPort(0) ) ;
+		
 		
 		System.out.println("The network is built. Now we simulate with input 'TFTF'.") ;
 		inputA.setInputSequence( new Value[] {Value.TRUE, Value.FALSE, Value.TRUE, Value.FALSE} ) ;
