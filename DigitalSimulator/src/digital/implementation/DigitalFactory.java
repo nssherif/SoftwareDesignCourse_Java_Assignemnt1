@@ -25,7 +25,7 @@ class DigitalFactory {
 	}
 
 	public DeviceInterface makeNewAndGate(String name) {
-		Assert.toBeDone() ; return null ;
+		return new AndGate(name);
 	}
 
 	public DeviceInterface makeNewNotGate(String name) {
@@ -33,7 +33,7 @@ class DigitalFactory {
 	}
 
 	public DeviceInterface makeNewOrGate(String name) {
-		Assert.toBeDone() ; return null ;
+		return new OrGate(name);
 	}
 
 	public DeviceInterface makeNewDFlipFlop(String name) {

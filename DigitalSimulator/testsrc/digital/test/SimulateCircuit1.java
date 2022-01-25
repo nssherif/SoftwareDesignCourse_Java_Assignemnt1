@@ -16,22 +16,16 @@ public class SimulateCircuit1 {
 		System.out.println("Building a circuit that only has an input, and one flip-flop.") ;
 		Network network = new Network() ;
 		
-		
 		InputDeviceInterface inputA = network.makeInput("A") ;
-		
 		
 		NetInterface a = network.makeNet("a") ;
 		a.addPort(  inputA.getPort(0) ) ;
-		System.out.println("Value of inputA is: " + inputA.getPort(0).getValue()) ;
 		
 		DeviceInterface flipFlop = network.makeDFlipFlop( "FF" ) ;
 		a.addPort( flipFlop.getPort(1) ) ;
-		System.out.println("Value of flipFlop1 is: " + flipFlop.getPort(1).getValue()) ;
-
 		
 		NetInterface b = network.makeNet("b") ;
 		b.addPort( flipFlop.getPort(0) ) ;
-		System.out.println("Value of flipFlop0 is: " + flipFlop.getPort(0).getValue()) ;
 
 		System.out.println("The network is built. Now we simulate with input 'TTFTFF'.") ;
 		inputA.setInputSequence( new Value[] {Value.TRUE, Value.TRUE, Value.FALSE, Value.TRUE, Value.FALSE, Value.FALSE} ) ;

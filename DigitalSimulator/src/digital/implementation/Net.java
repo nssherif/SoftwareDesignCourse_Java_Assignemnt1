@@ -78,7 +78,6 @@ public class Net implements NetInterface {
 		Assert.check( outputPortIndex == -1 || ! p.isOutputPort(),
 				"Net "+name+" already has an output port." ) ;
 		if( p.isOutputPort() ) outputPortIndex = ports.size() ;
-		System.out.println("Output port? : " + p.isOutputPort());
 		ports.add( p ) ;
 	}
 
