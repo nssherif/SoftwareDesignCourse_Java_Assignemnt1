@@ -27,7 +27,7 @@ public class DFlipFlop extends Device{
 	
 	/** 
 	 * Constructor for a DFlipFlop, creates an output 
-	 * and input device and gives a name to the device.
+	 * and input port and gives a name to the device.
 	 */
 	public DFlipFlop(String deviceName) {
 		super(deviceName);
