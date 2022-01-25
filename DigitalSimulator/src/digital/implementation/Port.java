@@ -17,8 +17,6 @@ public class Port implements PortInterface {
 	
 	private Value value;
 	
-	private PortInterface port;
-	
 	public Port (boolean isOutputPort) {
 		this.isOutputPort = isOutputPort;
 	}
@@ -30,6 +28,7 @@ public class Port implements PortInterface {
 	@Override
 	public boolean isOutputPort() {
 		return isOutputPort;
+		
 	};
 	
 	/** 

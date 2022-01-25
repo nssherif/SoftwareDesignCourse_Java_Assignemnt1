@@ -26,9 +26,9 @@ public class Network {
 	 * @param name a unique name for the device.
 	 * @return the new device
 	 */
-	public InputDeviceInterface makeInput( String name, boolean isOutputPort ) {
+	public InputDeviceInterface makeInput( String name ) {
 		Assert.check( getDeviceByName(name)==null, "Device name is not unique." ) ;
-		InputDeviceInterface device = factory.makeNewInput( name, isOutputPort ) ;
+		InputDeviceInterface device = factory.makeNewInput( name ) ;
 		devices.add( device ) ;
 		return device ; }
 
@@ -70,7 +70,7 @@ public class Network {
 	 * @param name a unique name for the device.
 	 * @return the new device
 	 */
-	public DeviceInterface makeDFlipFlop( String name ) {
+	public DeviceInterface makeDFlipFlop( String name) {
 		Assert.check( getDeviceByName(name)==null, "Device name is not unique." ) ;
 		DeviceInterface device = factory.makeNewDFlipFlop( name ) ;
 		devices.add( device ) ;

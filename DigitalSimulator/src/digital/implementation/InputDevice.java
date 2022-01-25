@@ -8,21 +8,20 @@ import digital.interfaces.PortInterface;
 import digital.interfaces.Value;
 import util.Assert;
 
-/** ToBeDone 
+/**  
+ * Represents an input device that has one output and no inputs.
+ * In response to the first clock edge the device outputs the 
+ * first response, and in response to the second edge, 
+ * outputs the second and so on.
  * 
  * @author Negib Sherif
  *
  **/
 
-public class InputDevice implements InputDeviceInterface{
+public class InputDevice extends Device implements InputDeviceInterface{
 	
 	/** 
-	 * Number of ports of input device which is always 1 output port and no input ports.
-	 */
-	private final int numOfPorts = 1;
-	
-	/** 
-	 * Placeholder for the only port of the device
+	 * Placeholder for a port of the device
 	 */
 	private PortInterface port;
 	
@@ -37,51 +36,21 @@ public class InputDevice implements InputDeviceInterface{
 	int clock = 0;
 	
 	/** 
-	 * The name of this device
+	 * Constructor for a Input String, creates 1 output 
+	 * port and gives a name to the device.
 	 */
-	private String deviceName;
-	
-	
-	InputDevice(String deviceName, boolean isOutputPort) {
-		this.deviceName = deviceName;
-		port = new Port(isOutputPort);
+	InputDevice(String deviceName) {
+		super(deviceName);
+		port = new Port(true);
+		this.getPorts().add(port);
 	}
-	
-	/** Gets the name of this device 
-	 * 
-	 * return device name
-	 * */
-	@Override
-	public String getName() {
-		return deviceName;
-	};
-	
-	/** How many ports does this device have 
-	 * 
-	 * return number of ports
-	 * */
-	@Override
-	public int numberOfPorts() {
-		return numOfPorts;
-		
-	};
-	
-	/** Get the given port.
-	 * <p>Precondition: 0 <= portNumber < numberOfPorts() 
-	 * @param portNumber
-	 * @return The port
-	 */
-	@Override
-	public PortInterface getPort( int portNumber ) {
-		Assert.check(portNumber>=0 && portNumber< numOfPorts, "Precondition not met: Port Number is not greater than or equal 0 or less than number of ports ");
-		return port;
-	};
 	
 	/** 
 	 * Updates the output in response to a clock edge
 	 */
 	@Override
 	public void clock() {
+		PortInterface port = this.getPort(0);
 		if (clock < values.length) {
 			port.setValue(values[clock]);
 			clock+=1;
@@ -107,7 +76,6 @@ public class InputDevice implements InputDeviceInterface{
 		}
 		return changed ;
 	};
-	
 	
 	/** 
 	 * Gets input sequence from parameter and stores it in a local variable

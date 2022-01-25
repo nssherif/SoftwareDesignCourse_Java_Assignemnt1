@@ -20,8 +20,8 @@ class DigitalFactory {
 		return new Net( name ) ;
 	}
 
-	public InputDeviceInterface makeNewInput(String name, Boolean isOutputPort) {
-		return new InputDevice(name, isOutputPort);
+	public InputDeviceInterface makeNewInput(String name) {
+		return new InputDevice(name);
 	}
 
 	public DeviceInterface makeNewAndGate(String name) {
@@ -37,6 +37,6 @@ class DigitalFactory {
 	}
 
 	public DeviceInterface makeNewDFlipFlop(String name) {
-		Assert.toBeDone() ; return null ;
+		return new DFlipFlop(name);
 	}
 }
