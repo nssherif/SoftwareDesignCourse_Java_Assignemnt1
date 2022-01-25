@@ -1,6 +1,7 @@
 package digital.implementation;
 
 import digital.interfaces.PortInterface;
+import digital.interfaces.Value;
 
 
 /**  
@@ -51,6 +52,8 @@ public class DFlipFlop extends Device{
 	 */
 	@Override
 	public void clock() {
-		this.getPort(0).setValue(this.getPort(1).getValue()); //sends values from input to output
+		PortInterface outputPort = this.getPort(0);
+		Value inputValue = this.getPort(1).getValue();
+		outputPort.setValue(inputValue);
 	};
 }

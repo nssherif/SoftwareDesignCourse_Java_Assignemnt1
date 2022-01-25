@@ -29,7 +29,7 @@ class DigitalFactory {
 	}
 
 	public DeviceInterface makeNewNotGate(String name) {
-		Assert.toBeDone() ; return null ;
+		return new NotGate(name);
 	}
 
 	public DeviceInterface makeNewOrGate(String name) {

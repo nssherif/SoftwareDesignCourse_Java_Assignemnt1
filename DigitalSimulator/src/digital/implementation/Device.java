@@ -17,11 +17,6 @@ import util.Assert;
 public abstract class Device implements DeviceInterface{	
 	
 	/** 
-	 * Hold the values given by the user when they call setInputSequence method
-	 */
-	private Value[] values;
-	
-	/** 
 	 * Variable clock that keeps track of the clock iteration.
 	 */
 	int clock = 0;
