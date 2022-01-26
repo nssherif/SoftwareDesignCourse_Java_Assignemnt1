@@ -56,7 +56,10 @@ Step 2: Install Eclipse from here.( https://www.eclipse.org/downloads/)
 Once Eclipse and Java are installed. Open the project in your eclipse workspace and run the project PlotterMain.java file which 
 can be found in the following directory (/ExpressionsAndPlotting/src/plotter). You should see the calculator pop up when you run the file. 
 
-![Calculator - screenshot](docs/assets/plotter.PNG) 
+<p align="center">
+  <a href="" rel="noopener">
+ <img width=200px height=200px src="docs/assets/plotter.png" alt="Project logo"></a>
+</p>
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 
@@ -66,7 +69,7 @@ can be found in the following directory (/ExpressionsAndPlotting/src/plotter). Y
 ## ✍️ Authors <a name = "authors"></a>
 
 - Theodore Norvell - Idea, writing most of the classes and providing instructions to finish the project
-- [@nssherif](https://github.com/nssherif) - For writing the classes implementing expressions.
+- [@nssherif](https://github.com/nssherif) - Implmeneted the expression classes used inside the plotter. 
 
 ## 🎉 Acknowledgements <a name = "acknowledgement"></a>
 
