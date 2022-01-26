@@ -66,7 +66,7 @@ can be found in the following directory (/ExpressionsAndPlotting/src/plotter). Y
 ## ✍️ Authors <a name = "authors"></a>
 
 - Theodore Norvell - Idea, writing most of the classes and providing instructions to finish the project
-- [@nssherif](https://github.com/nssherif) -
+- [@nssherif](https://github.com/nssherif) - For writing the classes implementing expressions.
 
 ## 🎉 Acknowledgements <a name = "acknowledgement"></a>
 
