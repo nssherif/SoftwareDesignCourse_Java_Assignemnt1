@@ -36,7 +36,7 @@ public abstract class Device implements DeviceInterface{
 	/** 
 	 * Device constructor that creates a device with a name.
 	 */
-	public Device(String deviceName) {
+	Device(String deviceName) {
 		this.deviceName = deviceName;
 	}
 

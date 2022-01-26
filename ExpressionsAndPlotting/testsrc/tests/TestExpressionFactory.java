@@ -34,6 +34,7 @@ public class TestExpressionFactory {
 		Expression b = f.x( ) ;
 		Expression c = f.add( a, b ) ;
 		
+		
 		assertEquals(v+x, c.value( x ), 0.0001 ) ;
 		
 		assertMatches( " *9[.]0* *[+] *x *", c) ;
@@ -59,7 +60,7 @@ public class TestExpressionFactory {
 		Expression c = f.multiply( a, b ) ;
 		
 		assertEquals(v*x, c.value( x ), 0.0001 ) ;
-		
+	
 		assertMatches( " *9[.]0* *[*]? *x *", c) ;
 	}
 	
@@ -83,6 +84,7 @@ public class TestExpressionFactory {
 		Expression b = f.x( ) ;
 		Expression c = f.add( a, b ) ;
 		Expression d = f.parenthesized(c) ;
+	
 		assertEquals(v+x, d.value( x ), 0.0001 ) ;
 		
 		assertMatches( " *[(] *9[.]0* *[+] *x *[)] *", d) ;
