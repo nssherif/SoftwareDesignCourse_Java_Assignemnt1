@@ -1,23 +1,27 @@
 package expr;
 
-public class Parenthesized implements Expression{
-	private Expression exp1;
-	
-	private double x;
+/**  
+ * Represents a parenthesized class which inherits from 
+ * the math operation abstract class which parenthesizes
+ * an expression.
+ * 
+ * @author Negib Sherif
+ *
+ **/
+
+public class Parenthesized extends MathOperation implements Expression{
 	
 	public Parenthesized (Expression a) {
-		exp1 = a;
+		super(a);
 	}
 
 	@Override
 	public double value(double x) {
-		this.x = exp1.value(x);
-		return this.x;
+		return this.getValue("Parenthesized", x);
 	}
 	
 	@Override
 	public String toString() {
-		String str1 = exp1.toString();		
-		return ("(" + str1 + ")");
+		return this.getString("Parenthesized");
 	}
 }

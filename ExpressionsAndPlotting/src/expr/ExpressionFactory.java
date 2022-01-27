@@ -1,5 +1,13 @@
 package expr;
 
+/**  
+ * Represents an expression factory which 
+ * generation multiple math expressions. 
+ * 
+ * @author Negib Sherif
+ *
+ **/
+
 public class ExpressionFactory implements ExpressionFactoryI{
 	
 	public Expression add(Expression a, Expression b) {

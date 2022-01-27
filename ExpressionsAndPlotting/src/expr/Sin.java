@@ -1,25 +1,28 @@
 package expr;
 
-public class Sin implements Expression {
-	
-	private Expression exp1;
-	
-	private double result;
+/**  
+ * Represents an sin class which inherits from 
+ * the math operation abstract class which 
+ * calculates the sin of an expression. 
+ * 
+ * @author Negib Sherif
+ *
+ **/
+
+public class Sin extends MathOperation implements Expression {
 	
 	public Sin (Expression a) {
-		exp1 = a;
+		super(a);
 	}
 
 	@Override
 	public double value(double x) {
-		result = Math.sin(exp1.value(x));
-		return result;
+		return this.getValue("Sin", x);
 	}
 	
 	@Override
 	public String toString() {
-		String str1 = exp1.toString();
-		return ("sin " + str1);
+		return this.getString("Sin");
 	}
 
 }

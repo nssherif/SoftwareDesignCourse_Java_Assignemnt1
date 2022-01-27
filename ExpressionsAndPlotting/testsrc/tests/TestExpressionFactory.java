@@ -106,6 +106,7 @@ public class TestExpressionFactory {
 		Expression b = f.cos( a ) ;
 		assertEquals(Math.cos(x), b.value( x ), 0.0001 ) ;
 		
+		System.out.println("cos is+ " + b);
 		assertMatches( " *cos[(]? *x *[)]? *", b) ;
 	}
 

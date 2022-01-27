@@ -1,24 +1,28 @@
 package expr;
 
-public class Ln implements Expression{
-	private Expression exp1;
-	
-	private double result;
+/**  
+ * Represents an logarithm class which inherits from 
+ * the math operation abstract class which 
+ * calculates the logarithm of an expression. 
+ * 
+ * @author Negib Sherif
+ *
+ **/
+
+public class Ln extends MathOperation implements Expression{
 	
 	public Ln (Expression a) {
-		exp1 = a;
+		super(a);
 	}
 
 	@Override
 	public double value(double x) {
-		result = Math.log(exp1.value(x));
-		return result;
+		return this.getValue("Log", x);
 	}
 	
 	@Override
 	public String toString() {
-		String str1 = exp1.toString();
-		return ("ln " + str1);
+		return this.getString("Log");
 	}
 
 }

@@ -1,25 +1,29 @@
 package expr;
 
-public class Tan implements Expression{
+/**  
+ * Represents an tan class which inherits from 
+ * the math operation abstract class which 
+ * calculates the tan of an expression. 
+ * 
+ * @author Negib Sherif
+ *
+ **/
+
+public class Tan extends MathOperation implements Expression{
 	
-	private Expression exp1;
-	
-	private double result;
 	
 	public Tan (Expression a) {
-		exp1 = a;
+		super(a);
 	}
 
 	@Override
 	public double value(double x) {
-		result = Math.tan(exp1.value(x));
-		return result;
+		return this.getValue("Tan", x);
 	}
 	
 	@Override
 	public String toString() {
-		String str1 = exp1.toString();
-		return ("tan " + str1);
+		return this.getString("Tan");
 	}
 
 }

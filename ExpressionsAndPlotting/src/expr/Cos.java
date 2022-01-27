@@ -1,25 +1,28 @@
 package expr;
 
-public class Cos implements Expression {
-	
-	private Expression exp1;
-	
-	private double result;
+/**  
+ * Represents an Cos class which inherits from 
+ * the math operation abstract class which 
+ * calculates the Cos of an expression. 
+ * 
+ * @author Negib Sherif
+ *
+ **/
+
+public class Cos extends MathOperation implements Expression {
 	
 	public Cos (Expression a) {
-		exp1 = a;
+		super(a);
 	}
 
 	@Override
 	public double value(double x) {
-		result = Math.cos(exp1.value(x));
-		return result;
+		return this.getValue("Cos", x);
 	}
 	
 	@Override
 	public String toString() {
-		String str1 = exp1.toString();
-		return ("cos " + str1);
+		return this.getString("Cos");
 	}
 
 }
