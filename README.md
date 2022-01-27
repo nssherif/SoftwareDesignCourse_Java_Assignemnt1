@@ -56,10 +56,7 @@ Step 2: Install Eclipse from here.( https://www.eclipse.org/downloads/)
 Once Eclipse and Java are installed. Open the project in your eclipse workspace and run the project PlotterMain.java file which 
 can be found in the following directory (/ExpressionsAndPlotting/src/plotter). You should see the calculator pop up when you run the file. 
 
-<p align="center">
-  <a href="" rel="noopener">
- <img width=200px height=200px src="docs/assets/plotter.png" alt="Project logo"></a>
-</p>
+Simulation: ![Alt](/docs/assets/plotter.png "Logic Gate Simulation")
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 
