@@ -10,6 +10,9 @@ import java.util.List;
  * parenthesized) 
  * 
  * @author Negib Sherif
+ * @studentID 201904422
+ * @email nssherif@mun.ca
+ * @declaration This file was prepared by me and me alone. 
  *
  **/
 public abstract class MathOperation implements Expression {

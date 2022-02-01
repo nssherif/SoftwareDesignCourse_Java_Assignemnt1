@@ -6,15 +6,19 @@ import digital.interfaces.Value;
 
 /**  
  * Represents a OrGate device that has one output 
- * and 1 or 2 input ports.
+ * and 2 input ports.
  * Updates values of output based on truth table for OrGate.
  * 
  * @author Negib Sherif
+ * @studentID 201904422
+ * @email nssherif@mun.ca
+ * @declaration This file was prepared by me and me alone.
  *
  **/
 public class OrGate extends TwoInputDevice{
+	
 	/** 
-	 * Constructor for a DFlipFlop, inherits
+	 * Constructor for an OrGate, inherits
 	 * functionality from abstract class. 
 	 */
 	public OrGate(String deviceName) {
@@ -22,7 +26,7 @@ public class OrGate extends TwoInputDevice{
 	}
 	
 	/** 
-	 * Update function updates the output based on the 
+	 * Updates the output based on the 
 	 * truth table of a NOT gate.
 	 */
 	@Override

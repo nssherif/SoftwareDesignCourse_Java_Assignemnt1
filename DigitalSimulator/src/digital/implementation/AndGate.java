@@ -6,25 +6,30 @@ import digital.interfaces.Value;
 
 /**  
  * Represents an AndGate device that has one output 
- * and 1 or 2 input ports.
- * Updates values of output based on truth table for AndGate.
+ * and 2 input ports.
+ * Updates values of output based on truth table for NotGate.
  * 
  * @author Negib Sherif
+ * @studentID 201904422
+ * @email nssherif@mun.ca
+ * @declaration This file was prepared by me and me alone. 
  *
  **/
 public class AndGate extends TwoInputDevice {
 	
 	/** 
-	 * Constructor for a DFlipFlop, inherits
+	 * Constructor for a AndGate, inherits
 	 * functionality from abstract class. 
+	 * Creates a new AndGate with a name and 
+	 * 2 input ports and  1 output port. 
 	 */
 	public AndGate(String deviceName) {
 		super(deviceName);
 	}
 	
 	/** 
-	 * Update function updates the output based on the 
-	 * truth table of a NOT gate.
+	 * Updates the output based on the 
+	 * truth table of an And Gate.
 	 */
 	@Override
 	public boolean update() {

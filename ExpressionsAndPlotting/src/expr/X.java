@@ -5,6 +5,9 @@ package expr;
  * is basically a variable in an expression. 
  * 
  * @author Negib Sherif
+ * @studentID 201904422
+ * @email nssherif@mun.ca
+ * @declaration This file was prepared by me and me alone.
  *
  **/
 public class X implements Expression {

@@ -1,10 +1,13 @@
 package expr;
 
 /**  
- * Represents an constant class which 
+ * Represents a constant class which 
  * is basically a constant in an expression. 
  * 
  * @author Negib Sherif
+ * @studentID 201904422
+ * @email nssherif@mun.ca
+ * @declaration This file was prepared by me and me alone. 
  *
  **/
 
@@ -17,7 +20,7 @@ public class Constant implements Expression {
 	private double result;
 	
 	/**  
-	 * Constructs a constant class which is 
+	 * Constructs a constant object which is 
 	 * just a constant in an expression. 
 	 **/
 	public Constant (double value) {

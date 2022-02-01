@@ -1,12 +1,9 @@
 package digital.implementation;
 
-import java.util.ArrayList;
-import java.util.List;
 
 import digital.interfaces.InputDeviceInterface;
 import digital.interfaces.PortInterface;
 import digital.interfaces.Value;
-import util.Assert;
 
 /**  
  * Represents an input device that has one output and no inputs.
@@ -15,6 +12,9 @@ import util.Assert;
  * outputs the second and so on.
  * 
  * @author Negib Sherif
+ * @studentID 201904422
+ * @email nssherif@mun.ca
+ * @declaration This file was prepared by me and me alone. 
  *
  **/
 
@@ -36,7 +36,7 @@ public class InputDevice extends Device implements InputDeviceInterface{
 	int clock = 0;
 	
 	/** 
-	 * Constructor for a Input String, creates 1 output 
+	 * Constructor for a Input Device, creates 1 output 
 	 * port and gives a name to the device.
 	 */
 	InputDevice(String deviceName) {

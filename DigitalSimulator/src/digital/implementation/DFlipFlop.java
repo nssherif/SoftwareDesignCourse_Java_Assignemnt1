@@ -10,7 +10,9 @@ import digital.interfaces.Value;
  *
  * 
  * @author Negib Sherif
- *
+ * @studentID 201904422
+ * @email nssherif@mun.ca
+ * @declaration This file was prepared by me and me alone. 
  **/
 
 public class DFlipFlop extends Device{

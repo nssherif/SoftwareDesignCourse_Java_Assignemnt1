@@ -5,13 +5,14 @@ import digital.interfaces.PortInterface;
 import digital.interfaces.Value;
 
 /**
- * Represents a two input and a 1 output device.
+ * Represents a two input and a one output device.
  * 
  * @author Negib Sherif
  *
  */
 
 public abstract class TwoInputDevice extends Device {
+	
 	/** 
 	 * Placeholder for a port of the device
 	 */
@@ -40,8 +41,8 @@ public abstract class TwoInputDevice extends Device {
 	}
 	
 	/** 
-	 * Update function updates the output based on the 
-	 * truth table of a the two input gate.
+	 * Updates the output based on the 
+	 * truth table of the two input gate.
 	 */
 	public abstract boolean update();
 	
@@ -56,7 +57,7 @@ public abstract class TwoInputDevice extends Device {
 	/** 
 	 * Function that computes if output has changed
 	 * 
-	 * @param both input values of the device
+	 * @param both input values of a device
 	 * @return boolean: true if output changed, false if not
 	 */
 	public boolean outputChanged (Value inputValue1, Value inputValue2) {

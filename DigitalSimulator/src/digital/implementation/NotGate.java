@@ -5,10 +5,13 @@ import digital.interfaces.Value;
 
 /**  
  * Represents an NotGate device that has one output 
- * and 1 or 2 input ports.
+ * and 1 input ports.
  * Updates values of output based on truth table for NotGate.
  * 
  * @author Negib Sherif
+ * @studentID 201904422
+ * @email nssherif@mun.ca
+ * @declaration This file was prepared by me and me alone.
  *
  **/
 
@@ -20,7 +23,7 @@ public class NotGate extends Device {
 	private PortInterface port;
 	
 	/** 
-	 * Constructor for a DFlipFlop, creates an output 
+	 * Constructor for a NotGate, creates an output 
 	 * and input device and gives a name to the device.
 	 */
 	public NotGate(String deviceName) {
@@ -34,7 +37,7 @@ public class NotGate extends Device {
 	}
 	
 	/** 
-	 * Update function updates the output based on the 
+	 * Updates the output based on the 
 	 * truth table of a NOT gate.
 	 */
 	@Override

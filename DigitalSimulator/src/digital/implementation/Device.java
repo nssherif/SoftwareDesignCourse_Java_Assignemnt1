@@ -9,10 +9,14 @@ import digital.interfaces.Value;
 import util.Assert;
 
 /**
- * Represents a device. A device could be of 5 different types outline in assignment documentation.
- * A device can be (InputDevice, NotGate, OrGate, AndGate, or a DFlipFlip)
+ * Represents an abstract class for a device. 
+ * A device could be of 5 different types outlined in the assignment documentation.
+ * A device can be (InputDevice, NotGate, OrGate, AndGate, or a DFlipFlip).
  * 
  * @author Negib Sherif
+ * @studentID 201904422
+ * @email nssherif@mun.ca
+ * @declaration This file was prepared by me and me alone. 
  */
 public abstract class Device implements DeviceInterface{	
 	
@@ -71,7 +75,6 @@ public abstract class Device implements DeviceInterface{
 		return ports.get(portNumber);
 	};
 	
-
 	/** 
 	 * Gets the ports list.
 	 * @return ports list
